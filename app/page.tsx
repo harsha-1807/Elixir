@@ -190,7 +190,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
       {/* white box  */}
       <div className="bg-white h-[40vw] w-[100vw]"></div>
     </main>
