@@ -1,9 +1,10 @@
 import { Linkedin } from 'lucide-react';
+import Link from 'next/link';
 import React from 'react';
 
 const Team = () => {
   return (
-    <div id="team" className="section relative pt-20 pb-8 md:pt-16 bg-white dark:bg-gray-800">
+    <div id="team" className="section relative pt-20 pb-8 md:pt-16 dark:bg-gray-800">
       <div className="container xl:max-w-6xl mx-auto px-4">
         {/* section header */}
         <header className="text-center mx-auto mb-12">
@@ -49,16 +50,18 @@ const Team = () => {
         {/* row */}
         <div className="flex flex-wrap flex-row -mx-4 justify-center">
         <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
-            <div className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
+            <div className="relative overflow-hidden  dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
 
               <div className="relative overflow-hidden px-6">
                 <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar1.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image" />
               </div>
               <div className="pt-6 text-center">
-                <p className="text-lg leading-normal font-bold mb-1">Joe Antonio</p>
+                <p className="text-lg leading-normal font-bold mb-1">Vishvanath</p>
                 <p className="text-gray-500 leading-relaxed font-light">Founder CEO</p>
                 <div className="mt-2 mb-5 space-x-2 flex justify-center">
-                  <Linkedin/>
+                <Link href="https://www.linkedin.com/in/vishvanath07">
+                  <Linkedin />
+                  </Link>
                 </div>
            
               </div>
@@ -67,16 +70,18 @@ const Team = () => {
           </div>
           {/* 2 */}
           <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
-            <div className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
+            <div className="relative overflow-hidden  dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
 
               <div className="relative overflow-hidden px-6">
                 <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar1.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image" />
               </div>
               <div className="pt-6 text-center">
-                <p className="text-lg leading-normal font-bold mb-1">Joe Antonio</p>
+                <p className="text-lg leading-normal font-bold mb-1">Aravind</p>
                 <p className="text-gray-500 leading-relaxed font-light">Founder CEO</p>
                 <div className="mt-2 mb-5 space-x-2 flex justify-center">
-                  <Linkedin/>
+                <Link href="https://www.linkedin.com/in/aravindhantv">
+                  <Linkedin />
+                  </Link>
                 </div>
            
               </div>
@@ -85,16 +90,18 @@ const Team = () => {
           </div>
           {/* 3 */}
           <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
-            <div className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
+            <div className="relative overflow-hidden  dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
 
               <div className="relative overflow-hidden px-6">
                 <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar1.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image" />
               </div>
               <div className="pt-6 text-center">
-                <p className="text-lg leading-normal font-bold mb-1">Joe Antonio</p>
+                <p className="text-lg leading-normal font-bold mb-1">Vikirthan</p>
                 <p className="text-gray-500 leading-relaxed font-light">Founder CEO</p>
                 <div className="mt-2 mb-5 space-x-2 flex justify-center">
-                  <Linkedin/>
+                  <Link href="https://www.linkedin.com/in/vikirthan">
+                  <Linkedin />
+                  </Link>
                 </div>
            
               </div>

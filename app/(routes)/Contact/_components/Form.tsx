@@ -9,9 +9,13 @@ const Form = () => {
   const [mail, setmail] = useState("");
   const [phone, setphone] = useState("");
   const [message, setmessage] = useState("");
+  const empty = "{empty}"
 
 
-
+  const handleEmailClick = () => {
+   const href = `mailto:elixircofficial@gmail.com?subject=New Member Alert!&body=Hi,I am ${name? name: empty}.My mail is ${mail? mail: empty}.My contact number : ${phone? phone: empty}.The message:${message? message:empty}`;
+   window.location.href = href; // Open the email client
+ };
 
   function handleChange(event: any) {
     const { name, value } = event.target;
@@ -161,7 +165,7 @@ const Form = () => {
                   
                    
                       <button
-                        
+                      onClick={handleEmailClick}
                         className="
                       w-full
                       text-white

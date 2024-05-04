@@ -22,7 +22,10 @@ export default function RootLayout({
     <html lang="en" >
       <body className={inter.className} style={{backgroundColor:"#FFFCF5"}}>
       <Header/>
-        
+        <br />
+        <br />
+        <br />
+        <br />
         {children}
       <Footer/>
         </body>

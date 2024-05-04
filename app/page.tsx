@@ -45,7 +45,7 @@ export default function Home() {
             here to bridge the gap between education and opputunity and help the
             student to achieve their desired position in this competitive world
           </p>
-          <a className="hidden rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max ">
+          <a href="#explore" className="hidden rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max ">
             Explore Now!
           </a>
         </div>
@@ -121,7 +121,7 @@ export default function Home() {
           className="icons icona"
         />
 
-        <h2 className="text-black  text-center font-semibold text-[3vw] mt-5 ">
+        <h2 id="ourServices" className="text-black  text-center font-semibold text-[3vw] mt-5 ">
           Our Services
         </h2>
         <p className="text-[1vw] text-center font-medium text-[#8A8A8A] ">
@@ -199,7 +199,7 @@ export default function Home() {
       </div>
 
       {/* yellow box  */}
-      <div className="bg-[#FDF8EE] h-[30vw] w-[100vw] p-[30px] ">
+      <div id="explore" className="bg-[#FDF8EE] h-[30vw] w-[100vw] p-[30px] ">
         <div className="w-[90vw] flex">
           <div className="flex self-end w-[50vw] h-[60vw] mt-6">
             <img

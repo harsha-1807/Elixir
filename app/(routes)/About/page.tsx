@@ -34,7 +34,7 @@ function About() {
         </div>
       </div>
       {/* part 2 */}
-      <div className=" m-[5vw] md:flex ">
+      <div className=" m-[5vw] md:flex  md:flex-row flex flex-col-reverse ">
         <div className="mt-[20px] md:ml-[70px] text-wrap md:w-[45vw] h-[max] flex items-start leading-7 md:mt-[3vw]">
           <span>
             <h1 className="text-center md:mb-[3vw] text-[#286AEA] text-bold poppins-title uppercase md:text-[2rem] ">
@@ -60,17 +60,17 @@ function About() {
         </div>
       </div>
       {/* part 3 */}
-      <div className=" m-[5vw] md:flex ">
+      {/* <div className=" m-[5vw] md:flex ">
         <div className="md:w-[45vw] flex justify-center">
           <Image
             src="./about1.svg"
             alt="svg"
             width={200}
             height={200}
-            className="md:w-[45vw] md:h-[30vw] items-center"
+            className="md:w-[45vw] md:h-[30vw] items-center hidden md:block"
           />
         </div>
-        <div className="mt-[20px] text-wrap md:w-[45vw] h-[max] flex  items-start leading-7 md:mt-[3vw] ">
+        <div className="mt-[20px] text-wrap md:w-[45vw] h-[max] flex  items-start leading-7 md:mt-[3vw]">
           <span>
             <h1 className="text-center md:mb-[3vw] text-[#286AEA] text-bold poppins-title uppercase md:text-[2rem] ">
               {" "}
@@ -86,9 +86,8 @@ function About() {
             </h2>
           </span>
         </div>
-      </div>
+      </div> */}
       <Team />
-      
     </div>
   );
 }
