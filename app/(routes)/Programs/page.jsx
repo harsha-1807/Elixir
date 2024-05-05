@@ -1,43 +1,41 @@
 "use client";
 import { ArrowRight } from "lucide-react";
-import React, { useEffect, useState } from "react";
-import Creative from "./_components/Creative";
-import Placement from "./_components/Placement";
+import React, { useEffect, useRef, useState } from "react";
+import Courses from "./_components/Courses";
 import Core from "./_components/Core";
+import Placement from "./_components/Placement"
+import Creative from "./_components/Creative"
 
 function Programs() {
-  const [change, setchange] = useState(0);
-  function handleclick(e) {
-    setchange(e);
-  }
-  
-  console.log(change)
+  const [SelectedCourse,setSelectedCourse] = useState("course1")
+  const courseDetailsRef = useRef(null);
 
-  
+  const handleCourseSelect=(Course)=>{
+    setSelectedCourse(Course)
+    
+    if (courseDetailsRef.current) {
+      courseDetailsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+
+  }
+
   return (
     <div className="text-center w-screen h-screen mt-5 ">
-      <h2 className="text-black  text-center font-semibold text-[2rem] my-5">
-        Programs we Provide
+      <h2 className=" text-center mt-5 text-2xl font-semibold">
+        Courses At {" "}
+        <span className="text-[#286AEA]">Elixir</span>
       </h2>
+        <Courses onCourseSelect={handleCourseSelect}/>
+        {/* <Creative/> */}
 
-      <div className="flex justify-center">
-        
-      <div className="md:flex md:gap-14 md:justify-between  bg my-8 text-[1.5rem] w-[20vw]">
-        {" "} 
-        <h2 onClick={()=>handleclick(1)}  role="button"> Core</h2>
-        <h2 onClick={()=>handleclick(0)} role="button">Creative</h2>
-        <h2 onClick={()=>handleclick(2)} role="button">Placement Services</h2>{" "}
-      </div>
-      </div>
 
-      {change == 0 ? (
-        <Creative />
-      ) : change == 1 ? (
-        <Core />
-      ) : change == 2 ? (
-        <Placement />
-      ) : (
-        <></>
+        {SelectedCourse && (
+        <div className="course-details pt-20" style={{paddingBottom:"5rem"}} id="details"  ref={courseDetailsRef}>
+          
+          {SelectedCourse === "course1" && <Core />}
+          {SelectedCourse === "course2" && <Placement />}
+          {SelectedCourse === "course3" && <Creative />}
+        </div>
       )}
     </div>
   );

@@ -20,13 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" >
-      <body className={inter.className} style={{backgroundColor:"#FFFCF5"}}>
+      <body className={inter.className} style={{backgroundColor:"#FFFCF5",}}>
       <Header/>
-        <br />
-        <br />
-        <br />
-        <br />
+        
+        <div className="pt-[5rem]">
+
         {children}
+        </div>
       <Footer/>
         </body>
     </html>

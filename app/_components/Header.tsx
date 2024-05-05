@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 function Header() {
   const Scrolled =  useScroll()
   return (
-    <header className={cn(" w-[97vw] my-5  fixed bg-[#FFFCF5] ml-4 rounded-2xl  z-[9999]",
+    <header className={cn(" w-[97vw] my-5  fixed bg-[#fffcf5c6] ml-4 rounded-2xl  z-[9999] glass",
     Scrolled && "border-b shadow-lg"
     )}>
       <div className="mx-auto flex h-16 max-w-[91vw] items-center gap-2 px-2 sm:px-6 lg:px-10 poller-one-regular justify-between">

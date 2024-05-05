@@ -45,7 +45,10 @@ export default function Home() {
             here to bridge the gap between education and opputunity and help the
             student to achieve their desired position in this competitive world
           </p>
-          <a href="#explore" className="hidden rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max ">
+          <a
+            href="#member"
+            className="hidden rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max "
+          >
             Explore Now!
           </a>
         </div>
@@ -121,7 +124,10 @@ export default function Home() {
           className="icons icona"
         />
 
-        <h2 id="ourServices" className="text-black  text-center font-semibold text-[3vw] mt-5 ">
+        <h2
+          id="ourServices"
+          className="text-black  text-center font-semibold text-[3vw] mt-5 "
+        >
           Our Services
         </h2>
         <p className="text-[1vw] text-center font-medium text-[#8A8A8A] ">
@@ -229,7 +235,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            
+
             {/* part2  */}
             <div className="flex mt-[15px]">
               <div className="w-[5vw] h-[5vw] bg-[#4D2C5E] rounded-[20px] flex justify-center items-center">
@@ -324,7 +330,7 @@ export default function Home() {
                   height={40}
                   width={40}
                 />
-                <span className="ml-[10px]">
+                <span className="ml-[10px]" id="member">
                   <h2 className="font-medium">Clara R. Altman</h2>
                   <p className="text-[#8A8A8A]">UI&UX Design</p>
                 </span>
@@ -340,7 +346,7 @@ export default function Home() {
           className="icons d2"
         />
 
-        <div className="w-[100vw] h-[max] ">
+        <div className="w-[100vw] h-[max] " >
           {/* <span className="">
           <h2 className="text-black  text-center font-semibold text-[3vw] mt-5">
           Subscibe to our newsletter
@@ -350,14 +356,8 @@ export default function Home() {
         </p>
           <Image src="/finalbox.svg" alt="pic" height={700} width={1100}  className="m-[15vw] my-6 absolute "/>
           </span> */}
-          <div className="relative flex justify-center">
-            <Image
-              src="/finalbox.svg"
-              alt="pic"
-              height={700}
-              width={1100}
-              
-            />
+          <div className="relative flex justify-center" >
+            <Image src="/finalbox.svg" alt="pic" height={700} width={1100} />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
               <h2 className="text-white font-semibold text-[2.5vw] mt-5">
                 Become a member at Elixir
@@ -365,28 +365,24 @@ export default function Home() {
               <p className="text-[1vw] font-medium text-[#ffffff]">
                 Receive regular updates from Elixir
               </p>
-              <div className=" h-[3vw] w-[25vw] ml-[3.5vw] mt-[15px] rounded-full flex justify-center
-               items-center px-[5px]">
+              <div
+                className=" h-[3vw] w-[25vw] ml-[3.5vw] mt-[15px] rounded-full flex justify-center
+               items-center px-[5px]"
+              >
                 {/* <p className="text-[1.2vw] font-medium text-[#8A8A8A] ml-[1vw]">
                  → 
                 </p> */}
                 {/* <input type="mail" className="text-[1vw] font-medium text-[#8A8A8A] ml-[1vw] outline-none" placeholder="Mail us to join"/> */}
-                <div className="bg-[#FF7426] px-[30px] h-[2.5vw] flex items-center rounded-full text-white w-[130px] ">
                   <Link href="/Contact">
-                  
-                     <button className="text-center">Subscibe</button>
-                  </Link>
-                
+                <div className="bg-[#FF7426] px-[30px] h-[2.5vw] flex items-center rounded-full text-white w-[130px] ">
+                    <button className="text-center">Subscibe</button>
                 </div>
+                  </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
- 
-
-      
     </main>
   );
 }
